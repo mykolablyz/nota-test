@@ -1,0 +1,12 @@
+alias sail="bash ./vendor/bin/sail"
+sudo systemctl stop nginx
+sudo netstat -lntup | grep ":80"
+
+// робить докер публічним и виносить папку докер в корінь проекта
+sail artisan sail:publish
+
+// php8.1-memcached php8.1-pcov php8.1-xdebug
+
+// mukolakolia@gmail.com
+
+vortex.filament@gmail.com
