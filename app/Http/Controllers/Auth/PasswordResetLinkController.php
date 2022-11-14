@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Validation\ValidationException;
 use Inertia\Inertia;
+use Spatie\RouteDiscovery\Attributes\DoNotDiscover;
+
+#[DoNotDiscover]
 
 class PasswordResetLinkController extends Controller
 {

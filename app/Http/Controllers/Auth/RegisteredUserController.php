@@ -11,6 +11,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Inertia\Inertia;
+use Spatie\RouteDiscovery\Attributes\DoNotDiscover;
+
+#[DoNotDiscover]
 
 class RegisteredUserController extends Controller
 {

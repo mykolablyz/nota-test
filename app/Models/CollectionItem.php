@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class CollectionItem extends Model
 {
     use HasFactory;
+
+    protected $casts = [
+        'content' => 'json'
+    ];
 }

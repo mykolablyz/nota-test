@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Inertia\Inertia;
+use Spatie\RouteDiscovery\Attributes\DoNotDiscover;
+
+#[DoNotDiscover]
 
 class ConfirmablePasswordController extends Controller
 {

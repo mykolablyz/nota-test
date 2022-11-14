@@ -11,6 +11,9 @@ use Illuminate\Support\Str;
 use Illuminate\Validation\Rules;
 use Illuminate\Validation\ValidationException;
 use Inertia\Inertia;
+use Spatie\RouteDiscovery\Attributes\DoNotDiscover;
+
+#[DoNotDiscover]
 
 class NewPasswordController extends Controller
 {
