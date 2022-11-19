@@ -34,4 +34,4 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/{handle}', [ProfileController::class, 'showByHandle']);
+Route::get('/{user:handle}', [ProfileController::class, 'showByHandle']);

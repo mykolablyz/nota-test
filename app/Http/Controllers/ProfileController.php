@@ -10,14 +10,11 @@ use Inertia\Inertia;
 class ProfileController extends Controller
 {
 
-    public function showByHandle($handle)
+    public function showByHandle(User $user)
     {
-        $user = User::query()
-            ->where('handle', $handle)
-            ->firstOrFail();
 
         $collectionItem = CollectionItem::query()
-            ->find(3);
+            ->find(4);
 
         return Inertia::render('Space/Welcome', [
             'collectionItem' => $collectionItem,

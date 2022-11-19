@@ -1,13 +1,16 @@
 <script setup>
-defineProps(['content'])
+import {computed, toRefs} from "vue"
+const props = defineProps(['content'])
+const { content } = toRefs(props)
+const layouts = computed(() => JSON.parse(content.value))
+
+
 </script>
 
 <template>
 
     <div>
-        <div v-for="(layout, i) in content" :key="i">
-            <pre v-text="JSON.stringify(layout, null, 4)"></pre>
-        </div>
+        <component is="DataComponent" v-for="(layout, i) in layouts" :key="i" :layout="layout" />
     </div>
 
 </template>

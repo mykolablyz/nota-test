@@ -58,8 +58,9 @@ class CollectionItem extends Resource
                     ]),
                     Text::make('Url'),
                 ])
-                ->addLayout('Video section', 'video', [
+                ->addLayout('Youtube Video', 'video', [
                     Text::make('Title'),
+                    Text::make('Subtitle'),
                     Text::make('Url'),
                 ])
         ];
